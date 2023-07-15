@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE packagegui SYSTEM "./schema/packages.dtd">
+<?xml-stylesheet type="text/xsl" href="./xsl/package.xsl"?>
+<packagegui>
+	<copyright>
+	<![CDATA[
+/*
+ * kms.xml
+ *
+ * part of pfSense (https://www.pfsense.org)
+ * Copyright (c) 2015-2022 Rubicon Communications, LLC (Netgate)
+ * All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+	]]>
+	</copyright>
+
+
+	<name>tor</name>
+	<title>TOR: server</title>
+
+	<menu>
+    	<name>TOR server log</name>
+    	<section>Diagnostics</section>
+    	<tooltiptext>TOR server log</tooltiptext>
+    	<url>/status_logs_packages.php?pkg=tor</url>
+	</menu>
+
+	<service>
+		<name>tor</name>
+		<rcfile>tor.sh</rcfile>
+		<executable>tor</executable>
+		<description>TOR server</description>
+	</service>
+
+
+	<fields>
+		<field>
+			<fielddescr>Enable</fielddescr>
+			<fieldname>serverenable</fieldname>
+			<description>Enable TOR Server.</description>
+			<type>checkbox</type>
+		</field>
+		<field>
+			<fielddescr>Listen IP</fielddescr>
+			<fieldname>listenip</fieldname>
+			<default_value>0.0.0.0</default_value>
+			<type>input</type>
+			<size>60</size>
+			<description>Comma-separated list of IP addresses for connections from the server. (Default: 0.0.0.0 - all IPv4 interfaces)</description>
+		</field>
+		<field>
+			<fielddescr>Port</fielddescr>
+			<fieldname>port</fieldname>
+                        <default_value>9050</default_value>
+			<description>
+				<![CDATA[
+					Enter the port that iperf will bind to listen for client connections. (Default is 1688.)<br/>
+				]]>
+			</description>
+			<type>input</type>
+		</field>
+		<field>
+			<fielddescr>Log Level</fielddescr>
+			<fieldname>loglevel</fieldname>
+			<description>Log Level</description>
+                        <default_value>INFO</default_value>
+			<type>select</type>
+			<options>
+				<option>
+					<name>info</name>
+					<value>INFO</value>
+				</option>
+				<option>
+					<name>debug</name>
+					<value>DEBUG</value>
+				</option>
+			</options>
+		</field>
+
+		
+	</fields>
+
+</packagegui>

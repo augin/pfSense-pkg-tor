@@ -1,0 +1,17 @@
+name: "pfSense-pkg-tor"
+version: "0.4.7.13_6"
+origin: net/pfSense-pkg-tor
+comment: <<EOD
+pfSense package tor+obfs4
+EOD
+maintainer: as@augin.ru
+prefix: /usr/local
+categories: [ net, ]
+licenselogic: single
+licenses: [ APACHE20, ]
+users: [ _tor, ]
+groups: [ _tor, ]
+deps: { 
+}
+options: {
+}

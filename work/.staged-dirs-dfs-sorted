@@ -1,0 +1,11 @@
+1 /etc/inc/priv
+2 /etc/inc
+3 /etc
+4 /usr
+5 /var/db/tor
+6 /var/db
+7 /var/log/tor
+8 /var/log
+9 /var/run/tor
+10 /var/run
+11 /var

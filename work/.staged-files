@@ -1,0 +1,17 @@
+/etc/inc/priv/tor.priv.inc
+/usr/local/bin/obfs4proxy
+/usr/local/bin/tor
+/usr/local/bin/tor-gencert
+/usr/local/bin/tor-print-ed-signing-cert
+/usr/local/bin/tor-resolve
+/usr/local/bin/torify
+/usr/local/etc/rc.d/tor.sh
+/usr/local/etc/tor/torrc
+/usr/local/etc/tor/torrc.sample
+/usr/local/pkg/tor.xml
+/usr/local/share/licenses/pfSense-pkg-tor-0.4.7.13_6/APACHE20
+/usr/local/share/licenses/pfSense-pkg-tor-0.4.7.13_6/LICENSE
+/usr/local/share/licenses/pfSense-pkg-tor-0.4.7.13_6/catalog.mk
+/usr/local/share/pfSense-pkg-tor/info.xml
+/usr/local/share/tor/geoip
+/usr/local/share/tor/geoip6

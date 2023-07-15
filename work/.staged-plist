@@ -1,0 +1,19 @@
+/etc/inc/priv/tor.priv.inc
+bin/obfs4proxy
+bin/tor
+bin/tor-gencert
+bin/tor-print-ed-signing-cert
+bin/tor-resolve
+bin/torify
+etc/rc.d/tor.sh
+etc/tor/torrc
+etc/tor/torrc.sample
+pkg/tor.xml
+%%DATADIR%%/info.xml
+share/tor/geoip
+share/tor/geoip6
+@dir /etc/inc/priv
+@dir /etc/inc
+@dir /var/db/tor
+@dir /var/log/tor
+@dir /var/run/tor
